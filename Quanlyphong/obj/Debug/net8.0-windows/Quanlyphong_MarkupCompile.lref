@@ -1,7 +1,12 @@
-﻿
-FC:\C#\Quanlyphong\Quanlyphong\Quanlyphong\App.xaml;;
-FC:\C#\Quanlyphong\Quanlyphong\Quanlyphong\Utilities\DataTemplate.xaml;;
-FC:\C#\Quanlyphong\Quanlyphong\Quanlyphong\View\Login.xaml;;
-FC:\C#\Quanlyphong\Quanlyphong\Quanlyphong\View\MainWindow.xaml;;
-FC:\C#\Quanlyphong\Quanlyphong\Quanlyphong\View\Register.xaml;;
+﻿C:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\App.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\UserControls\uc_AddRoom.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\UserControls\uc_Customer.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\UserControls\uc_Room.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\Utilities\DataTemplate.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\View\AddCustomer.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\View\AddRoom.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\View\Login.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\View\MainWindow.xaml;;
+FC:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\View\Register.xaml;;
 

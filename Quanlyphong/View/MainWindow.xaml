@@ -6,62 +6,74 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:vm="clr-namespace:Quanlyphong.ViewModel"
         xmlns:local="clr-namespace:Quanlyphong"
+        xmlns:uc="clr-namespace:Quanlyphong.UserControls"
         mc:Ignorable="d"
-        Title="Quản lý phòng"  Height="450" Width="800" Background="#272B2F" >
+        Title="Quản lý phòng"  Height="700" Width="1300" >
 
-
+    <Window.DataContext>
+        <vm:NavigationVM/>
+    </Window.DataContext>
     <Grid >
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="24*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="1">
+
+            <!--Main-->
+            <Grid   x:Name="GridBackground">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <!--ColorZone-->
+                <materialDesign:ColorZone    Background="#FFF4F4F4"  Height="30" Grid.Row="0"
+                                     x:Name="titleBar">
+                    <Grid>
+                        <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="210"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Orientation="Horizontal" Grid.Column="0" Margin="5 0 0 0 ">
+
+                            <Button Height="30" x:Name="Room"
+                            Command="{Binding RoomCommand}" Background="Transparent" BorderThickness="0" Padding="0">
+                                <materialDesign:PackIcon Kind="Menu" Foreground="Black" Width="30" Height="30"/>
+                            </Button>
+
+                        </StackPanel>
+
+                        <Grid Grid.Column="1">
+                            <TextBlock  VerticalAlignment="Center" Margin="40 0 0 0"
+                                Text="{Binding Title_Main}" FontSize="20"/>
+                        </Grid>
+                        <Grid Grid.Column="2"   >
 
 
-        <Border Background="#212529"
-             Grid.ColumnSpan="2" />
+                            <materialDesign:PopupBox Margin=" 0 0 40 0" HorizontalAlignment="Right">
+                                <ListBox>
+                                    <ListBoxItem Content="Hello World" />
+                                    <ListBoxItem Content="Nice Popup" />
+                                    <ListBoxItem Content="Information" />
+                                </ListBox>
+                            </materialDesign:PopupBox>
+                        </Grid>
 
-        <Grid Grid.ColumnSpan="2">
+                    </Grid>
 
-
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="228" />
-                <ColumnDefinition Width="622" />
-            </Grid.ColumnDefinitions>
-
-
-
-            <Grid HorizontalAlignment="Left"
-              Width="228">
-
-                <Border Background="#272B2F"
-                     >
-                    <Image  Source="/Images/login.jpeg" Stretch="Fill" Height="135" Margin="15" VerticalAlignment="Top" Width="155"/>
-                </Border>
-
-                <StackPanel Height="400"
-                        Width="228" Margin="0 100 0 0 ">
-
-
-
-                   
-
-                </StackPanel>
-
+                </materialDesign:ColorZone>
+                <!--Màn hình hiển thị-->
+                <Grid   x:Name="displayMain"
+                    Grid.Row="1" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="27*"/>
+                        <ColumnDefinition Width="1273*"/>
+                    </Grid.ColumnDefinitions>
+                    <ContentControl x:Name="Pages"
+                           Content="{Binding CurrentView}" 
+                                Width="auto"
+                                Height="auto" Grid.ColumnSpan="2" />
+                </Grid>
             </Grid>
-
-            <Grid Grid.Column="1">
-
-                <ContentControl x:Name="Pages"
-                            Content="{Binding CurrentView}" />
-
-            </Grid>
-
         </Grid>
-
-        <Button x:Name="CloseApp"
-            Style="{StaticResource ExitApp}"
-            Click="CloseApp_Click" Grid.ColumnSpan="2" />
 
     </Grid>
 

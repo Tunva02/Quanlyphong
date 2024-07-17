@@ -118,6 +118,7 @@ public partial class QuanlyphongContext : DbContext
 
             entity.Property(e => e.Description).HasMaxLength(200);
             entity.Property(e => e.Price).HasColumnType("decimal(10, 0)");
+            entity.Property(e => e.PriceHour).HasColumnType("decimal(10, 0)");
             entity.Property(e => e.RoomNumber)
                 .HasMaxLength(20)
                 .IsUnicode(false);

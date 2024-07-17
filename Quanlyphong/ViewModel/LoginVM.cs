@@ -15,6 +15,7 @@ using System.Security;
 using System.Windows.Input;
 using Quanlyphong.Utilities;
 using System.Windows.Controls;
+using static MaterialDesignThemes.Wpf.Theme;
 
 
 namespace Quanlyphong.ViewModel
@@ -31,11 +32,18 @@ namespace Quanlyphong.ViewModel
             Accounts = new ObservableCollection<Account>();
             LoginCommand = new RelayCommand(Login, CanLogin);
         }
-        public void PasswordBox_PasswordChanged(object  sender, RoutedEventArgs e)
+
+
+
+
+        public void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
         {
-                
-            Password = ((PasswordBox)sender).Password;
+            if (sender is System.Windows.Controls.PasswordBox)
+            {
+                Password = ((System.Windows.Controls.PasswordBox)sender).Password;
+            }
         }
+
 
         private bool CanLogin(object arg)
         {

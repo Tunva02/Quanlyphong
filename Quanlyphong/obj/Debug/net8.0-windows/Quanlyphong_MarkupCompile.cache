@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\C#\Quanlyphong\Quanlyphong\Quanlyphong\obj\Debug\net8.0-windows\
+C:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\obj\Debug\net8.0-windows\
 Quanlyphong
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\C#\Quanlyphong\Quanlyphong\Quanlyphong\App.xaml
-8-417519059
+C:\Users\ASUS\source\repos\Quanlyphong\Quanlyphong\App.xaml
+13-897292524
 
-181598135542
+271438847231
 2442121999502
-Styles\Button.xaml;Styles\Image.xaml;Styles\Page.xaml;Styles\Text.xaml;Utilities\DataTemplate.xaml;View\Login.xaml;View\MainWindow.xaml;View\Register.xaml;
+Styles\Button.xaml;Styles\Image.xaml;Styles\Page.xaml;Styles\Text.xaml;UserControls\uc_AddRoom.xaml;UserControls\uc_Customer.xaml;UserControls\uc_Room.xaml;Utilities\DataTemplate.xaml;View\AddCustomer.xaml;View\AddRoom.xaml;View\Login.xaml;View\MainWindow.xaml;View\Register.xaml;
 
-True
+False
 

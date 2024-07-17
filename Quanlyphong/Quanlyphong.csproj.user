@@ -7,6 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="UserControls\uc_AddRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\uc_Customer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\uc_Room.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddCustomer.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AddRoom.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,6 +30,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="UserControls\uc_AddRoom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\uc_Customer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\uc_Room.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddCustomer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AddRoom.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Login.xaml">
       <SubType>Designer</SubType>
     </Page>

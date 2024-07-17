@@ -14,6 +14,7 @@
     </Window.DataContext>
     <Grid>
         <Grid>
+            
             <StackPanel Orientation="Horizontal">
                 <StackPanel Width="350" Background="#FF6318A7">
                     <Image Width="287" Height="265" Margin="30 10" Stretch="Fill" Source="/Images/Login.jpeg" />
@@ -31,7 +32,8 @@
                             <PasswordBox  x:Name="txtPassword" FontSize="20" Margin="10 0"
                              materialDesign:HintAssist.Hint="********" Foreground="Black" Width="250"
                              BorderBrush="Black" CaretBrush="#FFD94448" SelectionBrush="#FFD94448"
-                             PasswordChanged="{Binding PasswordBox_PasswordChanged}" />
+                              PasswordChanged="{Binding PasswordBox_PasswordChanged}"/>
+                            
                         </StackPanel>
                         
                         <StackPanel Margin="10" HorizontalAlignment="Center">

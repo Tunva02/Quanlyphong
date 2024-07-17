@@ -36,7 +36,7 @@ namespace Quanlyphong.View
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-
+             
         }
     }
 }

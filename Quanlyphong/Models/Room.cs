@@ -12,10 +12,12 @@ public partial class Room
     public string? Type { get; set; }
 
     public decimal? Price { get; set; }
+    public decimal? PriceHour { get; set; }
 
     public string? Status { get; set; }
 
     public string Description { get; set; } = null!;
+   
 
     public virtual ICollection<Reservation> Reservations { get; set; } = new List<Reservation>();
 }
